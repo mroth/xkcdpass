@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF498D861A0EBCF600CCB027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF498D851A0EBCF600CCB027 /* AppDelegate.swift */; };
+		EF498D881A0EBCF600CCB027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF498D871A0EBCF600CCB027 /* ViewController.swift */; };
+		EF498D8B1A0EBCF600CCB027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF498D891A0EBCF600CCB027 /* Main.storyboard */; };
+		EF498D8D1A0EBCF600CCB027 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF498D8C1A0EBCF600CCB027 /* Images.xcassets */; };
+		EF498D901A0EBCF600CCB027 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF498D8E1A0EBCF600CCB027 /* LaunchScreen.xib */; };
+		EF498D9C1A0EBCF600CCB027 /* xkcdpassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF498D9B1A0EBCF600CCB027 /* xkcdpassTests.swift */; };
+		EFF949091A842E9D00E69D3A /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF949081A842E9D00E69D3A /* PasswordGenerator.swift */; };
+		EFF9973A1A84583300143BFC /* google-10000-english.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFF997391A84583300143BFC /* google-10000-english.txt */; };
+		EFF9973C1A845F2E00143BFC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9973B1A845F2E00143BFC /* SettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF498D961A0EBCF600CCB027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF498D781A0EBCF600CCB027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF498D7F1A0EBCF600CCB027;
+			remoteInfo = xkcdpass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF498D801A0EBCF600CCB027 /* xkcdpass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xkcdpass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF498D841A0EBCF600CCB027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF498D851A0EBCF600CCB027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF498D871A0EBCF600CCB027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF498D8A1A0EBCF600CCB027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF498D8C1A0EBCF600CCB027 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF498D8F1A0EBCF600CCB027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EF498D951A0EBCF600CCB027 /* xkcdpassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xkcdpassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF498D9A1A0EBCF600CCB027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF498D9B1A0EBCF600CCB027 /* xkcdpassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xkcdpassTests.swift; sourceTree = "<group>"; };
+		EFF949081A842E9D00E69D3A /* PasswordGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		EFF997391A84583300143BFC /* google-10000-english.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "google-10000-english.txt"; sourceTree = "<group>"; };
+		EFF9973B1A845F2E00143BFC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF498D7D1A0EBCF600CCB027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF498D921A0EBCF600CCB027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF498D771A0EBCF600CCB027 = {
+			isa = PBXGroup;
+			children = (
+				EF498D821A0EBCF600CCB027 /* xkcdpass */,
+				EF498D981A0EBCF600CCB027 /* xkcdpassTests */,
+				EF498D811A0EBCF600CCB027 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF498D811A0EBCF600CCB027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF498D801A0EBCF600CCB027 /* xkcdpass.app */,
+				EF498D951A0EBCF600CCB027 /* xkcdpassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF498D821A0EBCF600CCB027 /* xkcdpass */ = {
+			isa = PBXGroup;
+			children = (
+				EFF997391A84583300143BFC /* google-10000-english.txt */,
+				EF498D851A0EBCF600CCB027 /* AppDelegate.swift */,
+				EF498D871A0EBCF600CCB027 /* ViewController.swift */,
+				EFF949081A842E9D00E69D3A /* PasswordGenerator.swift */,
+				EF498D891A0EBCF600CCB027 /* Main.storyboard */,
+				EFF9973B1A845F2E00143BFC /* SettingsViewController.swift */,
+				EF498D8C1A0EBCF600CCB027 /* Images.xcassets */,
+				EF498D8E1A0EBCF600CCB027 /* LaunchScreen.xib */,
+				EF498D831A0EBCF600CCB027 /* Supporting Files */,
+			);
+			path = xkcdpass;
+			sourceTree = "<group>";
+		};
+		EF498D831A0EBCF600CCB027 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF498D841A0EBCF600CCB027 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF498D981A0EBCF600CCB027 /* xkcdpassTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF498D9B1A0EBCF600CCB027 /* xkcdpassTests.swift */,
+				EF498D991A0EBCF600CCB027 /* Supporting Files */,
+			);
+			path = xkcdpassTests;
+			sourceTree = "<group>";
+		};
+		EF498D991A0EBCF600CCB027 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF498D9A1A0EBCF600CCB027 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF498D7F1A0EBCF600CCB027 /* xkcdpass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF498D9F1A0EBCF600CCB027 /* Build configuration list for PBXNativeTarget "xkcdpass" */;
+			buildPhases = (
+				EF498D7C1A0EBCF600CCB027 /* Sources */,
+				EF498D7D1A0EBCF600CCB027 /* Frameworks */,
+				EF498D7E1A0EBCF600CCB027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xkcdpass;
+			productName = xkcdpass;
+			productReference = EF498D801A0EBCF600CCB027 /* xkcdpass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF498D941A0EBCF600CCB027 /* xkcdpassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF498DA21A0EBCF600CCB027 /* Build configuration list for PBXNativeTarget "xkcdpassTests" */;
+			buildPhases = (
+				EF498D911A0EBCF600CCB027 /* Sources */,
+				EF498D921A0EBCF600CCB027 /* Frameworks */,
+				EF498D931A0EBCF600CCB027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF498D971A0EBCF600CCB027 /* PBXTargetDependency */,
+			);
+			name = xkcdpassTests;
+			productName = xkcdpassTests;
+			productReference = EF498D951A0EBCF600CCB027 /* xkcdpassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF498D781A0EBCF600CCB027 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Matthew Rothenberg";
+				TargetAttributes = {
+					EF498D7F1A0EBCF600CCB027 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					EF498D941A0EBCF600CCB027 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = EF498D7F1A0EBCF600CCB027;
+					};
+				};
+			};
+			buildConfigurationList = EF498D7B1A0EBCF600CCB027 /* Build configuration list for PBXProject "xkcdpass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF498D771A0EBCF600CCB027;
+			productRefGroup = EF498D811A0EBCF600CCB027 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF498D7F1A0EBCF600CCB027 /* xkcdpass */,
+				EF498D941A0EBCF600CCB027 /* xkcdpassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF498D7E1A0EBCF600CCB027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF9973A1A84583300143BFC /* google-10000-english.txt in Resources */,
+				EF498D8B1A0EBCF600CCB027 /* Main.storyboard in Resources */,
+				EF498D901A0EBCF600CCB027 /* LaunchScreen.xib in Resources */,
+				EF498D8D1A0EBCF600CCB027 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF498D931A0EBCF600CCB027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF498D7C1A0EBCF600CCB027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF498D881A0EBCF600CCB027 /* ViewController.swift in Sources */,
+				EF498D861A0EBCF600CCB027 /* AppDelegate.swift in Sources */,
+				EFF949091A842E9D00E69D3A /* PasswordGenerator.swift in Sources */,
+				EFF9973C1A845F2E00143BFC /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF498D911A0EBCF600CCB027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF498D9C1A0EBCF600CCB027 /* xkcdpassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF498D971A0EBCF600CCB027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF498D7F1A0EBCF600CCB027 /* xkcdpass */;
+			targetProxy = EF498D961A0EBCF600CCB027 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF498D891A0EBCF600CCB027 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF498D8A1A0EBCF600CCB027 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF498D8E1A0EBCF600CCB027 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF498D8F1A0EBCF600CCB027 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF498D9D1A0EBCF600CCB027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF498D9E1A0EBCF600CCB027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF498DA01A0EBCF600CCB027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = xkcdpass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF498DA11A0EBCF600CCB027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = xkcdpass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF498DA31A0EBCF600CCB027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = xkcdpassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xkcdpass.app/xkcdpass";
+			};
+			name = Debug;
+		};
+		EF498DA41A0EBCF600CCB027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = xkcdpassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xkcdpass.app/xkcdpass";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF498D7B1A0EBCF600CCB027 /* Build configuration list for PBXProject "xkcdpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF498D9D1A0EBCF600CCB027 /* Debug */,
+				EF498D9E1A0EBCF600CCB027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF498D9F1A0EBCF600CCB027 /* Build configuration list for PBXNativeTarget "xkcdpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF498DA01A0EBCF600CCB027 /* Debug */,
+				EF498DA11A0EBCF600CCB027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF498DA21A0EBCF600CCB027 /* Build configuration list for PBXNativeTarget "xkcdpassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF498DA31A0EBCF600CCB027 /* Debug */,
+				EF498DA41A0EBCF600CCB027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF498D781A0EBCF600CCB027 /* Project object */;
+}
