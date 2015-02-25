@@ -82,10 +82,10 @@ class PasswordGenerator {
     
     /// Generates list of candidate words based on current setting properties.
     private func generateCandidateWords() -> [String] {
-        let candidates = wordList
-            .filter({$0.utf16Count <= self.maxWordLength})
-            .filter({$0.utf16Count >= self.minWordLength})
-        
+        let candidates = wordList.filter {
+            $0.utf16Count <= self.maxWordLength &&
+            $0.utf16Count >= self.minWordLength
+        }
         return candidates
     }
     
