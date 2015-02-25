@@ -68,12 +68,7 @@ class SettingsViewController: UIViewController {
 
         setInitialStepperValues()
         updateDisplays()
-
     }
-
-//    override func viewWillAppear(animated: Bool) {
-//    }
-
 
     /*
     // MARK: - Navigation
