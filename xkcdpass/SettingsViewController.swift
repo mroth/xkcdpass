@@ -42,7 +42,7 @@ class SettingsViewController: UIViewController {
         numWordLabel.text = "\( pg.numWords )"
         
         candidateDisplay.text = "\( pg.numCandidates )"
-        entropyDisplay.text = "~\(pg.entropy)"
+        entropyDisplay.text = String(format: "~%.1f", pg.entropy)
     }
     
     

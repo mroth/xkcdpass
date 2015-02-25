@@ -17,6 +17,7 @@
             <string>xkcd-Regular</string>
             <string>xkcd-Regular</string>
             <string>xkcd-Regular</string>
+            <string>xkcd-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -47,6 +48,12 @@
                                     <segue destination="3g5-go-i1e" kind="presentation" id="Kfa-FL-L79"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~44 Bits of Entropy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxY-IP-eDe">
+                                <rect key="frame" x="16" y="557.5" width="568" height="22"/>
+                                <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -58,6 +65,9 @@
                             <constraint firstAttribute="centerY" secondItem="XCi-F6-IeQ" secondAttribute="centerY" constant="261" id="gsm-mt-sCz"/>
                             <constraint firstItem="5a2-2Y-Zz0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="h3y-it-ZcI"/>
                             <constraint firstAttribute="centerX" secondItem="XCi-F6-IeQ" secondAttribute="centerX" id="hxF-St-db4"/>
+                            <constraint firstItem="JxY-IP-eDe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iIi-WK-hCA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JxY-IP-eDe" secondAttribute="bottom" constant="20.5" id="kNF-x4-QaB"/>
+                            <constraint firstItem="JxY-IP-eDe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kfa-gv-uvl"/>
                             <constraint firstItem="XCi-F6-IeQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ltP-0Y-eR5"/>
                             <constraint firstItem="5a2-2Y-Zz0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uuj-sc-hJG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XCi-F6-IeQ" secondAttribute="trailing" constant="273" id="xyf-8b-b7h"/>
@@ -73,12 +83,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="entropySentence" destination="JxY-IP-eDe" id="RAQ-e6-ya0"/>
                         <outlet property="passwordLabel" destination="5a2-2Y-Zz0" id="YGy-jj-W7J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-362" y="-2114"/>
+            <point key="canvasLocation" x="-362" y="-2140"/>
         </scene>
         <!--Settings-->
         <scene sceneID="A3l-SG-fMw">
@@ -234,9 +245,9 @@
                                 <exclude reference="bu5-Xb-vu1"/>
                                 <exclude reference="Tzu-JD-BeL"/>
                                 <exclude reference="T5N-JW-sW9"/>
-                                <exclude reference="tuk-yq-qxa"/>
                                 <exclude reference="5EB-K8-RsW"/>
                                 <exclude reference="RhL-T7-bfT"/>
+                                <exclude reference="tuk-yq-qxa"/>
                                 <exclude reference="pHf-oA-pDe"/>
                                 <exclude reference="gAr-Kc-csy"/>
                                 <exclude reference="z86-FY-SPM"/>
