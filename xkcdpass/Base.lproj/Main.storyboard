@@ -29,9 +29,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OOM-Gn-BGD" kind="popoverPresentation" popoverAnchorView="XCi-F6-IeQ" id="uEQ-Lb-TFg">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="3g5-go-i1e" kind="presentation" id="Kfa-FL-L79"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -230,7 +228,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="4hn-Sv-bbJ"/>
+                    <navigationItem key="navigationItem" title="Settings" id="4hn-Sv-bbJ">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="ltH-At-buV">
+                            <connections>
+                                <action selector="settingsDone:" destination="kKn-ib-S5J" id="hR2-st-xkY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="candidateDisplay" destination="dsw-8C-dTa" id="wp2-Zc-hdZ"/>
                         <outlet property="entropyDisplay" destination="PZp-fP-8Dx" id="Ylh-RS-d0p"/>
@@ -244,25 +248,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="utM-N5-q5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356" y="-1700"/>
+            <point key="canvasLocation" x="360" y="-1362"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="sd2-KI-I3p">
+        <scene sceneID="ZNm-YY-0zy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OOM-Gn-BGD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3g5-go-i1e" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VHF-8N-eoe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="azK-Be-UL8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="kKn-ib-S5J" kind="relationship" relationship="rootViewController" id="k2K-Xn-KBP"/>
+                        <segue destination="kKn-ib-S5J" kind="relationship" relationship="rootViewController" id="D3Z-Cw-FkP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxw-gB-le3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIG-2A-aRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356" y="-2462"/>
+            <point key="canvasLocation" x="-362" y="-1362"/>
         </scene>
     </scenes>
 </document>

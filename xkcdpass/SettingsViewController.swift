@@ -9,9 +9,8 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-    
-    // TODO: we need a global one of these, but for now this lets me make the UI
-    let pg = PasswordGenerator()
+
+    var pg: PasswordGenerator!
 
     // MARK: Outlets
     @IBOutlet weak var minWordStepper:      UIStepper!
@@ -23,7 +22,10 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var candidateDisplay:    UILabel!
     @IBOutlet weak var entropyDisplay:      UILabel!
     
-    
+    @IBAction func settingsDone(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {});
+    }
+
     // MARK: Initializers
     
     /// Sets initial state of steppers based on current brain values.
@@ -63,11 +65,15 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+
         setInitialStepperValues()
         updateDisplays()
+
     }
-    
+
+//    override func viewWillAppear(animated: Bool) {
+//    }
+
 
     /*
     // MARK: - Navigation

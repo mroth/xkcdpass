@@ -27,11 +27,27 @@ class ViewController: UIViewController {
             randomizePhrase()
         }
     }
-    
-    // be a dear and grab me one when we first start up too
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+
+    // MARK: - Navigation
+
+    // be a dear and grab me a new passphrase whenever this screen loads
+    override func viewWillAppear(animated: Bool) {
         randomizePhrase()
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // if wrapped in a UINavController
+        if let uinc = segue.destinationViewController as? UINavigationController {
+            if let svc = uinc.topViewController as? SettingsViewController {
+                svc.pg = generator
+            }
+        }
+
+        // if not wrapped
+        if let svc = segue.destinationViewController as? SettingsViewController {
+            svc.pg = generator
+        }
     }
     
 }
