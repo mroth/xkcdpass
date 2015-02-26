@@ -10,6 +10,8 @@ import UIKit
 import XCTest
 
 class xkcdpassTests: XCTestCase {
+
+    let pg = PasswordGenerator()
     
     override func setUp() {
         super.setUp()
@@ -21,15 +23,22 @@ class xkcdpassTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    //func testExample() {
+    //    // This is an example of a functional test case.
+    //    XCTAssert(true, "Pass")
+    //}
+
+    func testPerformanceDefaultPhraseGeneration() {
+        self.measureBlock {
+            for _ in 1...10 {
+                let _ = self.pg.phrase()
+            }
+        }
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+
+    func testPerformanceDefaultCandidateGeneration() {
+        self.measureBlock {
+            let _ = self.pg.generateCandidateWords()
         }
     }
     

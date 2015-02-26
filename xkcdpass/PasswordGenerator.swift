@@ -81,7 +81,7 @@ class PasswordGenerator {
     // MARK: Functions
     
     /// Generates list of candidate words based on current setting properties.
-    private func generateCandidateWords() -> [String] {
+    internal func generateCandidateWords() -> [String] {
         let candidates = wordList.filter {
             $0.utf16Count <= self.maxWordLength &&
             $0.utf16Count >= self.minWordLength

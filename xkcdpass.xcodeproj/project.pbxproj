@@ -13,6 +13,7 @@
 		EF498D8D1A0EBCF600CCB027 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF498D8C1A0EBCF600CCB027 /* Images.xcassets */; };
 		EF498D901A0EBCF600CCB027 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF498D8E1A0EBCF600CCB027 /* LaunchScreen.xib */; };
 		EF498D9C1A0EBCF600CCB027 /* xkcdpassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF498D9B1A0EBCF600CCB027 /* xkcdpassTests.swift */; };
+		EF706AEF1A9F80A6000F57E2 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF949081A842E9D00E69D3A /* PasswordGenerator.swift */; };
 		EF78FCFD1A9D7F5300E0C76F /* xkcd.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF78FCFC1A9D7F5300E0C76F /* xkcd.otf */; };
 		EFF949091A842E9D00E69D3A /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF949081A842E9D00E69D3A /* PasswordGenerator.swift */; };
 		EFF9973A1A84583300143BFC /* google-10000-english.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFF997391A84583300143BFC /* google-10000-english.txt */; };
@@ -237,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF706AEF1A9F80A6000F57E2 /* PasswordGenerator.swift in Sources */,
 				EF498D9C1A0EBCF600CCB027 /* xkcdpassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
