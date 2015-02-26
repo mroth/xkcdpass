@@ -10,7 +10,12 @@ Based on this cartoon:
 
 ## Installation
 
-I don't believe in paying Apple money just to give software away for free, so this isn't available on the App Store.  If you want to send donations to me towards the $99 Apple Developer "registration fee", I will put this on the App Store for free!
+I have an ethical problem in paying Apple :money_with_wings: just to be able to give my software away for free, so this isn't currently available on the App Store.  If you want to send donations to me towards the $99 Apple Developer "registration fee", I happily will put this on the App Store for free!
+
+paypal: 
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4VVFSF8VPZTGQ"><img src="https://img.shields.io/badge/paypal-donate-red.svg"></a>  
+gratipay: 
+<a href="https://gratipay.com/mroth/"><img src="https://img.shields.io/gratipay/mroth.svg"></a>
 
 If you *do* have a valid developer certificate, you should be able to clone this repo and install locally on your device.
 
