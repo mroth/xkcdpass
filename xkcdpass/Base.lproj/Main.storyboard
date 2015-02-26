@@ -18,6 +18,7 @@
             <string>xkcd-Regular</string>
             <string>xkcd-Regular</string>
             <string>xkcd-Regular</string>
+            <string>xkcd-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -34,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-2Y-Zz0">
-                                <rect key="frame" x="16" y="281" width="568" height="38.5"/>
+                                <rect key="frame" x="16" y="281" width="568" height="39"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,18 +49,26 @@
                                     <segue destination="3g5-go-i1e" kind="presentation" id="Kfa-FL-L79"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~44 Bits of Entropy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxY-IP-eDe">
-                                <rect key="frame" x="16" y="557.5" width="568" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Shake for another)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Asu-RI-jXU">
+                                <rect key="frame" x="16" y="558" width="568" height="22"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="18"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~44 Bits of Entropy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxY-IP-eDe">
+                                <rect key="frame" x="16" y="528" width="568" height="22"/>
+                                <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="5a2-2Y-Zz0" secondAttribute="centerX" id="3xW-T0-Ha5"/>
+                            <constraint firstItem="Asu-RI-jXU" firstAttribute="top" secondItem="JxY-IP-eDe" secondAttribute="bottom" constant="8" symbolic="YES" id="7IQ-ln-idB"/>
                             <constraint firstItem="XCi-F6-IeQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="C84-cz-M9X"/>
                             <constraint firstItem="XCi-F6-IeQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="273" id="OCf-d8-ZZc"/>
+                            <constraint firstAttribute="bottom" secondItem="Asu-RI-jXU" secondAttribute="bottom" constant="20" symbolic="YES" id="YTc-0w-Zbu"/>
+                            <constraint firstItem="Asu-RI-jXU" firstAttribute="trailing" secondItem="JxY-IP-eDe" secondAttribute="trailing" id="bfF-EY-a01"/>
                             <constraint firstAttribute="centerY" secondItem="5a2-2Y-Zz0" secondAttribute="centerY" id="dRk-37-xDn"/>
                             <constraint firstItem="XCi-F6-IeQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dqc-fN-PW5"/>
                             <constraint firstAttribute="centerY" secondItem="XCi-F6-IeQ" secondAttribute="centerY" constant="261" id="gsm-mt-sCz"/>
@@ -69,6 +78,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JxY-IP-eDe" secondAttribute="bottom" constant="20.5" id="kNF-x4-QaB"/>
                             <constraint firstItem="JxY-IP-eDe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kfa-gv-uvl"/>
                             <constraint firstItem="XCi-F6-IeQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ltP-0Y-eR5"/>
+                            <constraint firstItem="Asu-RI-jXU" firstAttribute="leading" secondItem="JxY-IP-eDe" secondAttribute="leading" id="qfR-Xp-BKo"/>
                             <constraint firstItem="5a2-2Y-Zz0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uuj-sc-hJG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XCi-F6-IeQ" secondAttribute="trailing" constant="273" id="xyf-8b-b7h"/>
                         </constraints>
@@ -79,6 +89,7 @@
                                 <exclude reference="gsm-mt-sCz"/>
                                 <exclude reference="hxF-St-db4"/>
                                 <exclude reference="xyf-8b-b7h"/>
+                                <exclude reference="kNF-x4-QaB"/>
                             </mask>
                         </variation>
                     </view>
