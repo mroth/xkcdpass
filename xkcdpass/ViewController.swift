@@ -14,10 +14,14 @@ class ViewController: UIViewController {
     
     /// our local friendly instance of the PasswordGenerator brain
     let generator = PasswordGenerator()
-    
-    
+
     /// displays a new random passphrase based on current settings
     func randomizePhrase() {
+        let animation = CATransition()
+        animation.duration = 0.1
+        animation.type = kCATransitionFade
+        passwordLabel.layer.addAnimation(animation, forKey: "changeTextTransition")
+
         passwordLabel.text = generator.phrase()
     }
 
