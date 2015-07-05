@@ -26,7 +26,7 @@ class PasswordGenerator {
         didSet { candidateWords = generateCandidateWords() }
     }
     
-    
+
     // MARK: Constants
 
     /// raw word list of 10K most common words, from Google corpus
@@ -46,7 +46,7 @@ class PasswordGenerator {
     // MARK: Computed Properties
 
     /// Number of candidate words currently available for passphrase generation.
-    var numCandidates: Int { return countElements(candidateWords) }
+    var numCandidates: Int { return count(candidateWords) }
     
     /**
     Level of entropy for passphrases generated with current settings.
@@ -83,8 +83,8 @@ class PasswordGenerator {
     /// Generates list of candidate words based on current setting properties.
     internal func generateCandidateWords() -> [String] {
         let candidates = wordList.filter {
-            $0.utf16Count <= self.maxWordLength &&
-            $0.utf16Count >= self.minWordLength
+            count($0.utf16) <= self.maxWordLength &&
+            count($0.utf16) >= self.minWordLength
         }
         return candidates
     }
