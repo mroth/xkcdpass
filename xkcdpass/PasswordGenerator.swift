@@ -30,13 +30,11 @@ class PasswordGenerator {
     // MARK: Constants
 
     /// raw word list of 10K most common words, from Google corpus
-    private let wordList = String(
+    private let wordList = (try! String(
         contentsOfFile:
             NSBundle.mainBundle()
             .pathForResource("google-10000-english", ofType: "txt")!,
-        encoding: NSUTF8StringEncoding,
-        error: nil
-    )!.componentsSeparatedByString("\n")
+        encoding: NSUTF8StringEncoding)).componentsSeparatedByString("\n")
     
     /// candidateWords is lazily generated upon first usage.
     /// (adjusting min or max word length will auto-regenerate.)
@@ -46,7 +44,7 @@ class PasswordGenerator {
     // MARK: Computed Properties
 
     /// Number of candidate words currently available for passphrase generation.
-    var numCandidates: Int { return count(candidateWords) }
+    var numCandidates: Int { return candidateWords.count }
     
     /**
     Level of entropy for passphrases generated with current settings.
@@ -83,21 +81,21 @@ class PasswordGenerator {
     /// Generates list of candidate words based on current setting properties.
     internal func generateCandidateWords() -> [String] {
         let candidates = wordList.filter {
-            count($0.utf16) <= self.maxWordLength &&
-            count($0.utf16) >= self.minWordLength
+            $0.utf16.count <= self.maxWordLength &&
+            $0.utf16.count >= self.minWordLength
         }
         return candidates
     }
     
     /// Generates passphrase containing the default number of words.
     func phrase() -> String {
-        return " ".join(randomWords(numWords))
+        return randomWords(numWords).joinWithSeparator(" ")
     }
     
     /// Selects a number of random words from the current candidates.
     ///
-    /// :param: n the number of words to select.
-    /// :returns: An array of randomly selected words.
+    /// - parameter n: the number of words to select.
+    /// - returns: An array of randomly selected words.
     func randomWords(n: Int) -> [String] {
         var words = [String]()
         for _ in 1...n {

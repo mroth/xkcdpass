@@ -30,8 +30,8 @@ class ViewController: UIViewController {
     }
     
     // if the van's a shakin', passwords be makin'
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
-        if(event.subtype == UIEventSubtype.MotionShake) {
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if let e = event where e.subtype == UIEventSubtype.MotionShake {
             randomizePhrase()
         }
     }
