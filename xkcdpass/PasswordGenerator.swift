@@ -30,21 +30,21 @@ class PasswordGenerator {
     // MARK: Constants
 
     /// raw word list of 10K most common words, from Google corpus
-    private let wordList = (try! String(
-        contentsOfFile:
-            NSBundle.mainBundle()
-            .pathForResource("google-10000-english", ofType: "txt")!,
-        encoding: NSUTF8StringEncoding)).componentsSeparatedByString("\n")
+    private let wordList =
+		(try! String( contentsOfFile:
+            Bundle.main.path(forResource: "google-10000-english", ofType: "txt")!,
+		encoding: .utf8))
+		.components(separatedBy: "\n")
     
     /// candidateWords is lazily generated upon first usage.
     /// (adjusting min or max word length will auto-regenerate.)
-    private lazy var candidateWords: [String] = self.generateCandidateWords()
+    private lazy var candidateWords: [String] = generateCandidateWords()
     
     
     // MARK: Computed Properties
 
     /// Number of candidate words currently available for passphrase generation.
-    var numCandidates: Int { return candidateWords.count }
+    var numCandidates: Int { candidateWords.count }
     
     /**
     Level of entropy for passphrases generated with current settings.
@@ -72,7 +72,7 @@ class PasswordGenerator {
     Yielding approximately 44 bits of entropy.
     */
     var entropy: Double {
-        return log2(pow(Double(numCandidates), Double(numWords)))
+        log2(pow(Double(numCandidates), Double(numWords)))
     }
     
     
@@ -80,34 +80,24 @@ class PasswordGenerator {
     
     /// Generates list of candidate words based on current setting properties.
     internal func generateCandidateWords() -> [String] {
-        let candidates = wordList.filter {
-            $0.utf16.count <= self.maxWordLength &&
-            $0.utf16.count >= self.minWordLength
+        wordList.filter {
+            $0.utf16.count <= maxWordLength &&
+            $0.utf16.count >= minWordLength
         }
-        return candidates
     }
     
     /// Generates passphrase containing the default number of words.
     func phrase() -> String {
-        return randomWords(numWords).joinWithSeparator(" ")
+		randomWords(numWords).joined(separator: " ")
     }
     
     /// Selects a number of random words from the current candidates.
     ///
     /// - parameter n: the number of words to select.
     /// - returns: An array of randomly selected words.
-    func randomWords(n: Int) -> [String] {
-        var words = [String]()
-        for _ in 1...n {
-            words.append(randomWord())
-        }
-        return words
+    func randomWords(_ n: Int) -> [String] {
+		(1...n).compactMap { _ in
+			candidateWords.randomElement()
+		}
     }
-    
-    /// Selects a single random word from the current candidates.
-    func randomWord() -> String {
-        let randomIndex = Int(arc4random_uniform(UInt32(candidateWords.count)))
-        return candidateWords[randomIndex]
-    }
-    
 }

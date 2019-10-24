@@ -22,8 +22,8 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var candidateDisplay:    UILabel!
     @IBOutlet weak var entropyDisplay:      UILabel!
     
-    @IBAction func settingsDone(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: {});
+    @IBAction func settingsDone() {
+		dismiss(animated: true)
     }
 
     // MARK: Initializers
@@ -52,32 +52,20 @@ class SettingsViewController: UIViewController {
         pg.minWordLength = Int(sender.value)
         updateDisplays()
     }
+	
     @IBAction func maxWordStepperChanged(sender: UIStepper) {
         pg.maxWordLength = Int(sender.value)
         updateDisplays()
     }
+	
     @IBAction func numWordStepperChanged(sender: UIStepper) {
         pg.numWords = Int(sender.value)
         updateDisplays()
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
         setInitialStepperValues()
         updateDisplays()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
