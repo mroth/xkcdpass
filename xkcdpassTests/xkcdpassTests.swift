@@ -29,16 +29,16 @@ class xkcdpassTests: XCTestCase {
     //}
 
     func testPerformanceDefaultPhraseGeneration() {
-        self.measureBlock {
+		measure {
             for _ in 1...10 {
-                let _ = self.pg.phrase()
+                let _ = pg.phrase()
             }
         }
     }
 
     func testPerformanceDefaultCandidateGeneration() {
-        self.measureBlock {
-            let _ = self.pg.generateCandidateWords()
+		measure {
+            let _ = pg.generateCandidateWords()
         }
     }
     

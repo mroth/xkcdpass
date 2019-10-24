@@ -1,25 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="xkcd.otf">
+        <array key="xkcd.otf">
             <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-            <string>xkcd-Regular</string>
-        </mutableArray>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -31,39 +21,38 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-2Y-Zz0">
-                                <rect key="frame" x="16" y="281" width="568" height="39"/>
+                                <rect key="frame" x="20" y="428.5" width="374" height="39"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCi-F6-IeQ">
-                                <rect key="frame" x="562" y="28" width="22" height="22"/>
+                                <rect key="frame" x="369" y="52" width="25" height="24"/>
                                 <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="3g5-go-i1e" kind="presentation" id="Kfa-FL-L79"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Shake for another)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Asu-RI-jXU">
-                                <rect key="frame" x="16" y="558" width="568" height="22"/>
+                                <rect key="frame" x="20" y="854" width="374" height="22"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="18"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~44 Bits of Entropy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxY-IP-eDe">
-                                <rect key="frame" x="16" y="528" width="568" height="22"/>
+                                <rect key="frame" x="20" y="824" width="374" height="22"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="5a2-2Y-Zz0" secondAttribute="centerX" id="3xW-T0-Ha5"/>
                             <constraint firstItem="Asu-RI-jXU" firstAttribute="top" secondItem="JxY-IP-eDe" secondAttribute="bottom" constant="8" symbolic="YES" id="7IQ-ln-idB"/>
                             <constraint firstItem="XCi-F6-IeQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="C84-cz-M9X"/>
                             <constraint firstItem="XCi-F6-IeQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="273" id="OCf-d8-ZZc"/>
@@ -111,98 +100,89 @@
                         <viewControllerLayoutGuide type="bottom" id="EVb-wR-OcI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="coV-IZ-YBa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min. word length:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXC-ny-kAe">
-                                <rect key="frame" x="16" y="76" width="416" height="20.5"/>
+                                <rect key="frame" x="20" y="70" width="145" height="20.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="1" maximumValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="5wh-uW-5R0">
-                                <rect key="frame" x="490" y="72" width="94" height="29"/>
+                                <rect key="frame" x="300" y="64" width="94" height="32"/>
                                 <connections>
-                                    <action selector="minWordStepperChanged:" destination="kKn-ib-S5J" eventType="valueChanged" id="G1u-rH-fOO"/>
+                                    <action selector="minWordStepperChangedWithSender:" destination="kKn-ib-S5J" eventType="valueChanged" id="tvp-1o-lVt"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfi-EN-mhg">
-                                <rect key="frame" x="440" y="76" width="42" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="yRB-2w-oWk"/>
-                                </constraints>
+                                <rect key="frame" x="283.5" y="70" width="8.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minimumValue="2" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="7Gw-c1-H9Z">
-                                <rect key="frame" x="490" y="109" width="94" height="29"/>
+                                <rect key="frame" x="300" y="104" width="94" height="32"/>
                                 <connections>
-                                    <action selector="maxWordStepperChanged:" destination="kKn-ib-S5J" eventType="valueChanged" id="kli-ss-vKa"/>
+                                    <action selector="maxWordStepperChangedWithSender:" destination="kKn-ib-S5J" eventType="valueChanged" id="Wvb-yB-HTf"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwT-9C-woc">
-                                <rect key="frame" x="440" y="113" width="42" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="mia-EB-rzV"/>
-                                </constraints>
+                                <rect key="frame" x="271" y="110" width="21" height="20.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of words in phrase:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNw-oj-U2V">
-                                <rect key="frame" x="16" y="228" width="416" height="20.5"/>
+                                <rect key="frame" x="20" y="228" width="227" height="20.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="42d-iQ-jZd">
-                                <rect key="frame" x="490" y="223.5" width="94" height="29"/>
+                                <rect key="frame" x="300" y="222" width="94" height="32"/>
                                 <connections>
-                                    <action selector="numWordStepperChanged:" destination="kKn-ib-S5J" eventType="valueChanged" id="q6u-1C-S87"/>
+                                    <action selector="numWordStepperChangedWithSender:" destination="kKn-ib-S5J" eventType="valueChanged" id="5LK-cP-AHr"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyM-rS-1vu">
-                                <rect key="frame" x="440" y="228" width="42" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="Rel-fi-qdX"/>
-                                </constraints>
+                                <rect key="frame" x="274" y="228" width="18" height="20.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of candidate words:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mme-1b-QgL">
-                                <rect key="frame" x="16" y="154" width="568" height="25.5"/>
+                                <rect key="frame" x="20" y="152" width="374" height="25.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NNN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-8C-dTa">
-                                <rect key="frame" x="16" y="187" width="568" height="20.5"/>
+                                <rect key="frame" x="20" y="185.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NNN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZp-fP-8Dx">
-                                <rect key="frame" x="16" y="302.5" width="568" height="20.5"/>
+                                <rect key="frame" x="20" y="303.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bits of entropy for generated passphrases:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.70000000000000018" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oA9-W4-gCb">
-                                <rect key="frame" x="16" y="268.5" width="568" height="25.5"/>
+                                <rect key="frame" x="20" y="270" width="374" height="25.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max. word length:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Dz-yz-oZV">
-                                <rect key="frame" x="16" y="113" width="416" height="20.5"/>
+                                <rect key="frame" x="20" y="110" width="154.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="xkcd-Regular" family="xkcd" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5wh-uW-5R0" firstAttribute="trailing" secondItem="coV-IZ-YBa" secondAttribute="trailingMargin" id="0h5-NP-GWp"/>
                             <constraint firstItem="eyM-rS-1vu" firstAttribute="centerY" secondItem="YNw-oj-U2V" secondAttribute="centerY" id="5Aa-Zv-aTr"/>
@@ -213,7 +193,7 @@
                             <constraint firstItem="7Gw-c1-H9Z" firstAttribute="trailing" secondItem="coV-IZ-YBa" secondAttribute="trailingMargin" id="AWI-EF-0DC"/>
                             <constraint firstItem="5wh-uW-5R0" firstAttribute="leading" secondItem="Dfi-EN-mhg" secondAttribute="trailing" constant="8" symbolic="YES" id="By7-N4-Vqu"/>
                             <constraint firstItem="42d-iQ-jZd" firstAttribute="centerY" secondItem="eyM-rS-1vu" secondAttribute="centerY" id="ECL-vZ-sLO"/>
-                            <constraint firstItem="BwT-9C-woc" firstAttribute="leading" secondItem="9Dz-yz-oZV" secondAttribute="trailing" constant="8" symbolic="YES" id="GGc-Dw-KN2"/>
+                            <constraint firstItem="BwT-9C-woc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Dz-yz-oZV" secondAttribute="trailing" constant="8" symbolic="YES" id="GGc-Dw-KN2"/>
                             <constraint firstItem="BwT-9C-woc" firstAttribute="centerY" secondItem="7Gw-c1-H9Z" secondAttribute="centerY" id="H4V-Pc-DOi"/>
                             <constraint firstItem="dsw-8C-dTa" firstAttribute="leading" secondItem="coV-IZ-YBa" secondAttribute="leadingMargin" id="IBG-xV-dX3"/>
                             <constraint firstItem="Mme-1b-QgL" firstAttribute="top" secondItem="9Dz-yz-oZV" secondAttribute="bottom" constant="16" id="IPq-81-ARH"/>
@@ -230,15 +210,15 @@
                             <constraint firstItem="dsw-8C-dTa" firstAttribute="top" secondItem="Mme-1b-QgL" secondAttribute="bottom" constant="8" symbolic="YES" id="ZFC-gv-ZfW"/>
                             <constraint firstItem="oA9-W4-gCb" firstAttribute="leading" secondItem="coV-IZ-YBa" secondAttribute="leadingMargin" id="ZOb-d7-9Ad"/>
                             <constraint firstItem="7Gw-c1-H9Z" firstAttribute="top" secondItem="5wh-uW-5R0" secondAttribute="bottom" constant="8" symbolic="YES" id="Zht-O9-G4e"/>
-                            <constraint firstItem="Dfi-EN-mhg" firstAttribute="leading" secondItem="gXC-ny-kAe" secondAttribute="trailing" constant="8" symbolic="YES" id="a0g-Rh-MF2"/>
                             <constraint firstItem="7Gw-c1-H9Z" firstAttribute="leading" secondItem="BwT-9C-woc" secondAttribute="trailing" constant="8" symbolic="YES" id="aKN-p4-kaq"/>
                             <constraint firstItem="YNw-oj-U2V" firstAttribute="top" secondItem="dsw-8C-dTa" secondAttribute="bottom" constant="16" id="bu5-Xb-vu1"/>
                             <constraint firstItem="42d-iQ-jZd" firstAttribute="trailing" secondItem="coV-IZ-YBa" secondAttribute="trailingMargin" id="gAr-Kc-csy"/>
                             <constraint firstItem="9Dz-yz-oZV" firstAttribute="leading" secondItem="coV-IZ-YBa" secondAttribute="leadingMargin" id="gch-tu-fo0"/>
+                            <constraint firstItem="Dfi-EN-mhg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gXC-ny-kAe" secondAttribute="trailing" constant="8" symbolic="YES" id="hKa-QV-PpA"/>
                             <constraint firstItem="PZp-fP-8Dx" firstAttribute="trailing" secondItem="coV-IZ-YBa" secondAttribute="trailingMargin" id="hqP-NK-vvA"/>
                             <constraint firstItem="9Dz-yz-oZV" firstAttribute="centerY" secondItem="BwT-9C-woc" secondAttribute="centerY" id="kfH-pJ-pub"/>
                             <constraint firstItem="Mme-1b-QgL" firstAttribute="top" secondItem="7Gw-c1-H9Z" secondAttribute="bottom" constant="16" id="nlf-in-jgR"/>
-                            <constraint firstItem="eyM-rS-1vu" firstAttribute="leading" secondItem="YNw-oj-U2V" secondAttribute="trailing" constant="8" symbolic="YES" id="oLJ-K2-jJg"/>
+                            <constraint firstItem="eyM-rS-1vu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YNw-oj-U2V" secondAttribute="trailing" constant="8" symbolic="YES" id="oLJ-K2-jJg"/>
                             <constraint firstItem="7Gw-c1-H9Z" firstAttribute="leading" secondItem="BwT-9C-woc" secondAttribute="trailing" constant="8" id="pHf-oA-pDe"/>
                             <constraint firstItem="Dfi-EN-mhg" firstAttribute="centerY" secondItem="gXC-ny-kAe" secondAttribute="centerY" id="qrp-X0-PrI"/>
                             <constraint firstItem="42d-iQ-jZd" firstAttribute="centerX" secondItem="5wh-uW-5R0" secondAttribute="centerX" id="rjV-yx-Rj0"/>
@@ -258,8 +238,8 @@
                                 <exclude reference="T5N-JW-sW9"/>
                                 <exclude reference="5EB-K8-RsW"/>
                                 <exclude reference="RhL-T7-bfT"/>
-                                <exclude reference="tuk-yq-qxa"/>
                                 <exclude reference="pHf-oA-pDe"/>
+                                <exclude reference="tuk-yq-qxa"/>
                                 <exclude reference="gAr-Kc-csy"/>
                                 <exclude reference="z86-FY-SPM"/>
                             </mask>
@@ -268,7 +248,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="4hn-Sv-bbJ">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="ltH-At-buV">
                             <connections>
-                                <action selector="settingsDone:" destination="kKn-ib-S5J" id="hR2-st-xkY"/>
+                                <action selector="settingsDone" destination="kKn-ib-S5J" id="8tm-uG-X35"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -293,7 +273,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3g5-go-i1e" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="azK-Be-UL8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
